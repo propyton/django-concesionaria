@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  {%load static%}
+<head>
+  <title>Camionetas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
+  <link rel="stylesheet" href="{% static 'menu/css/Style.css' %}">
+
+  <!-- Origen de los colores generales de la pagina -->
+  <link rel="stylesheet" href="{% static 'menu/css/Style-Colors.css' %}">
+
+  <!-- Origen de los temas de colores para los contenedores -->
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+  <!-- Archivo de origen de la fuente de la pagina -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+  <!-- Archivo de origen de los iconos usadors en el segmento de Contac US -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top">
+    <div class="row padding brown">
+      <div class="col s3">
+        <a href="Menu Principal.html" class="button block brown">HOME</a>
+      </div>
+      <div class="col s3">
+        <a href="Suv.html" class="button block brown">Suv</a>
+      </div>
+      <div class="col s3">
+        <a href="#camionetas" class="button block brown">Camionetas</a>
+      </div>
+      <div class="col s3">
+        <a href="#contactanos" class="button block brown">CONTACTANOS</a>
+      </div>
+    </div>
+  </div>
+  <!-- Top Text -->
+  <div class="container padding-top-64 center" id="Camionetas">
+    <h2>
+      <span class="tag wide brown">
+        Camionetas
+      </span>
+    </h2>
+    <p class="justify">
+        En nuestro concesionario de automóviles, ofrecemos una amplia variedad de camionetas de ventas que se adaptan a las necesidades y deseos de nuestros clientes. 
+        Nos enorgullece ofrecer vehículos de alta calidad, y nuestras camionetas de ventas no son una excepción.
+        Nuestras camionetas de ventas están diseñadas para ser duraderas y confiables, 
+        ofreciendo una excelente capacidad de carga y versatilidad para cualquier tarea. Desde la entrega de productos hasta la movilidad en el sitio de trabajo, nuestras camionetas de ventas están diseñadas para ayudarlo a completar su trabajo de manera más eficiente y efectiva.
+    </p>
+    <hr>
+    </hr>
+  </div>
+  <!-- Dog Container -->
+  <div class="container center margin-top">
+    <h4>
+      <span class="tag wide brown">
+        Camionetas en Stock
+      </span>
+    </h4>
+  </div>
+  <div class="container center margin-top row-padding">
+
+    <div class="third">
+      <a href="Ford F150 Raptor.html">
+        <div class="card white">
+          <img src="{% static 'menu/img/Ford-F150-Raptor-R-3.jpg' %}" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Ford F150 Raptor</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="third">
+      <a href="Ford F150 Platinum.html">
+        <div class="card white">
+          <img src="img/f150_platinum.jpg" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Ford F150 Platinum</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="third">
+      <a href="Silverado.html">
+        <div class="card white">
+          <img src="img/chevrolet_silverado.jpg" alt="No Image" style="width: 100%;">
+          <div class="container">
+            <h5>Chevrolet Silverado</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+ <!-- Contact Us -->
+ <div class="container padding-64 w3-theme-l5 padding-left-64 padding-right-64" id="contactanos">
+    <div class="row">
+        <div class="col m5">
+            <div class="padding-16"><span class="xlarge border-brown bottombar">Contactanos</span></div>
+            <h3>Dirección</h3>
+            <p>Estamos hubicados.</p>
+            <p><i class="fa fa-map-marker text-brown xlarge"></i>  Vitacura, av. kennedy </p>
+            <p><i class="fa fa-phone text-brown xlarge"></i>  +00 1515151515</p>
+            <p><i class="fa fa-envelope-o text-brown xlarge"></i>  yoeljoaquin@duocuc.cl</p>
+        </div>
+        <div class="col m7">
+            <form class="container card-4 padding-16 white">
+                <div class="section">
+                    <label>Name</label>
+                    <input class="input" type="text" name="Name" required>
+                </div>
+                <div class="section">
+                    <label>Email</label>
+                    <input class="input" type="text" name="Email" required>
+                </div>
+                <div class="section">
+                    <label>Message</label>
+                    <input class="input" type="text" name="Message" required>
+                </div>
+                <button type="submit" class="button right theme">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="container padding-32 w3-theme-d1 center">
+    <h4>Follow Us</h4>
+    <a class="button large brown" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="button large brown" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="button large brown" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="button large brown" title="Google +"><i class="fa fa-instagram"></i></a>
+    <a class="button large brown hide-small" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <p>Powered by <a href="imagenes/Seinen.jpg" target="_blank">Nosotros</a></p>
+</footer>
+</body>
+
+</html>

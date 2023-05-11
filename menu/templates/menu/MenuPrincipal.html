@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Menu Principal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Origen de los colores generales de la pagina -->
+    <link rel="stylesheet" href="style/Style-Colors.css">
+
+    <!-- Origen de los temas de colores para los contenedores -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+    <!-- Archivo de origen de la fuente de la pagina -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+
+    <!-- Archivo de origen de los iconos usadors en el segmento de Contac US -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("img/logo.jpeg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .border-text {
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top">
+        <div class="row padding brown">
+            <div class="col s3">
+                <a href="#home" class="button block brown">Vent-a-Car</a>
+            </div>
+
+            <div class="col s3">
+                <a href="#sobre" class="button block brown">Sobre Nosotros</a>
+            </div>
+            <div class="col s3">
+                <a href="#secciones" class="button block brown">Secciones</a>
+            </div>
+            <div class="col s3">
+                <a href="Inicio De sesion.html" class="button block brown">Iniciar Sesion</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sand grayscale large"></div>
+    <!-- Header with Dog Image-->
+    <header class="bgimg display-container grayscale-min" id="home">
+        <div class="display-bottomleft center padding-large hide-small">
+            <span class="tag brown">Abierto desde 8 am a 6 pm</span>
+        </div>
+        <div class="display-bottomright center padding-large">
+            <span class="text-white tag brown">Providencia</span>
+        </div>
+    </header>
+    <!-- About Us Segment -->
+    <div class="container" id="sobre">
+        <div class="content" style="max-width:700px">
+            <h5 class="center padding-64">
+                <span class="tag wide brown">
+                    SOBRE NOSOTROS
+                </span>
+            </h5>
+            <p class="justify">
+                ¡Bienvenido a Vent-a-car! Nos enorgullece ofrecer una amplia selección de vehículos de alta calidad 
+                y brindar un excelente servicio al cliente a todos los que visitan nuestro concesionario.
+            </p>
+            <p class="justify">
+                En nuestro concesionario, entendemos que la compra de un automóvil es una decisión importante y que cada cliente tiene necesidades y deseos únicos. 
+                Por eso, nos esforzamos por brindar una experiencia de compra personalizada que satisfaga todas las necesidades de nuestros clientes.
+            </p>
+            <img src="img/01.jpg" alt="Image no found" style="width:100%;max-width:1000px"
+                class="margin-top ">
+                <br>
+                <br>
+        </div>
+    </div>
+    <!-- Nuestras Secciones -->
+    <div class="row-padding padding-64 w3-theme-l1" id="secciones">
+        <div class="third justify">
+            <h3>Nuestras Secciones de Ventas</h3>
+            <p>En nuestro concesionario de automóviles, ofrecemos una variedad de secciones de ventas que están diseñadas para satisfacer las necesidades y
+                 deseos de nuestros clientes. Nos enorgullece brindar un excelente servicio al cliente en cada una de nuestras secciones,
+                 y estamos comprometidos en ayudar a nuestros clientes a encontrar el automóvil perfecto para su estilo de vida y presupuesto.</p>
+        </div>
+        <div class="third">
+            <a href="Camionetas.html">
+                <div class="card white">
+                    <img src="img/Ford-F150-Raptor-R-3.jpg" alt="No found" style="width:100%" class="hover-opacity">
+                    <div class="container center">
+                        <h4>Camionetas</h4>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="third">
+            <a href="Suv.html">
+                <div class="card white">
+                    <img src="img/2017-Jeep-Grand-Cherokee-SRT-SUV-blue-Stephen-Corby-1200x800-(28).jpg" alt="No found" style="width:100%" class="hover-opacity">
+                    <div class="container center">
+                        <h4>Suv</h4>
+                        <h4></h4>
+                        <p></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Contact Us -->
+    <div class="container padding-64 w3-theme-l5 padding-left-64 padding-right-64" id="contactanos">
+        <div class="row">
+            <div class="col m5">
+                <div class="padding-16"><span class="xlarge border-brown bottombar">Contactanos</span></div>
+                <h3>Dirección</h3>
+                <p>Estamos hubicados.</p>
+                <p><i class="fa fa-map-marker text-brown xlarge"></i>  Vitacura, av. kennedy </p>
+                <p><i class="fa fa-phone text-brown xlarge"></i>  +00 1515151515</p>
+                <p><i class="fa fa-envelope-o text-brown xlarge"></i>  yoeljoaquin@duocuc.cl</p>
+            </div>
+            <div class="col m7">
+                <form class="container card-4 padding-16 white">
+                    <div class="section">
+                        <label>Name</label>
+                        <input class="input" type="text" name="Name" required>
+                    </div>
+                    <div class="section">
+                        <label>Email</label>
+                        <input class="input" type="text" name="Email" required>
+                    </div>
+                    <div class="section">
+                        <label>Message</label>
+                        <input class="input" type="text" name="Message" required>
+                    </div>
+                    <button type="submit" class="button right theme">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container padding-32 w3-theme-d1 center">
+        <h4>Follow Us</h4>
+        <a class="button large brown" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a class="button large brown" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="button large brown" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a class="button large brown" title="Google +"><i class="fa fa-instagram"></i></a>
+        <a class="button large brown hide-small" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+        <p>Powered by <a href="imagenes/Seinen.jpg" target="_blank">Nosotros</a></p>
+    </footer>
+</body>
+
+</html>
