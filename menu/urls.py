@@ -15,9 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import Camionetas, CambiarContrasenia
+from .views import Camionetas, CambiarContrasenia, FordF150Platinum, FordF150Raptor, InicioDesesion, jeep, Mazda, MenuPrincipal, PerfilDeUsuario, portada, RegistroDeUsuario, Silverado, subaru, Suv
 
 urlpatterns = [
    path('',Camionetas, name="Camionetas"),
    path('Cambiar', CambiarContrasenia, name="CambiarContrasenia"),
+   path('FordF150Platinum', FordF150Platinum, name="FordF150Platinum"),
+   path('FordF150Raptor', FordF150Raptor, name="FordF150Raptor"),
+   path('InicioDesesion', InicioDesesion, name="InicioDesesion"),
+   path('jeep', jeep, name="jeep"),
+   path('Mazda', Mazda, name="Mazda"),
+   path('MenuPrincipal', MenuPrincipal, name="MenuPrincipal"),
+   path('PerfilDeUsuario', PerfilDeUsuario, name="PerfilDeUsuario"),
+   path('portada', portada, name="portada"),
+   path('RegistroDeUsuario', RegistroDeUsuario, name="RegistroDeUsuario"),
+   path('Silverado', Silverado, name="Silverado"),
+   path('subaru', subaru, name="subaru"),
+   path('Suv', Suv, name="Suv"),
+   
 ]
