@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="{% static 'menu/css/Style.css' %}">
 
     <!-- Origen de los colores generales de la pagina -->
-    <link rel="stylesheet" href="style/Style-Colors.css">
+    <link rel="stylesheet" href="{% static 'menu/css/Style-Colors.css' %}">
 
     <!-- Origen de los temas de colores para los contenedores -->
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -39,13 +39,13 @@
     <div class="top">
         <div class="row padding brown">
             <div class="col s3">
-                <a href="Menu Principal.html" class="button block brown">HOME</a>
+                <a href="{% url'MenuPrincipal' %}" class="button block brown">HOME</a>
             </div>
             <div class="col s3">
-                <a href="suv.html" class="button block brown">Suv</a>
+                <a href="{% url'Suv' %}" class="button block brown">Suv</a>
             </div>
             <div class="col s3">
-                <a href="Camionetas.html" class="button block brown">Camionetas</a>
+                <a href="{% url'Camionetas' %}" class="button block brown">Camionetas</a>
             </div>
             <div class="col s3">
                 <a href="#contactanos" class="button block brown">CONTACTANOS</a>
@@ -72,7 +72,7 @@
         </div>
         <div class="third">
             <div class="white card">
-                <img src="img/Ford-F150-Raptor-R-3.jpg" alt="imagen no encontrada" style="width: 100%;">
+                <img src="{% static 'menu/img/Ford-F150-Raptor-R-3.jpg' %}" alt="imagen no encontrada" style="width: 100%;">
                 <div class="container left-align-small">
                     <p>Modelo: Ford F150 Raptor</p>
                     <p>Año: 2022</p>
@@ -99,7 +99,7 @@
             <div class="col m5">
                 <div class="padding-16"><span class="xlarge border-brown bottombar">Contactanos</span></div>
                 <h3>Dirección</h3>
-                <p>Estamos hubicados.</p>
+                <p>Estamos ubicados.</p>
                 <p><i class="fa fa-map-marker text-brown xlarge"></i>  Vitacura, av. kennedy </p>
                 <p><i class="fa fa-phone text-brown xlarge"></i>  +00 1515151515</p>
                 <p><i class="fa fa-envelope-o text-brown xlarge"></i>  Ventacar@ventasautos.cl</p>

@@ -8,10 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
   <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
-  <link rel="stylesheet" href="style/Style.css">
+  <link rel="stylesheet" href="{% static 'menu/css/Style.css' %}">
 
   <!-- Origen de los colores generales de la pagina -->
-  <link rel="stylesheet" href="style/Style-Colors.css">
+  <link rel="stylesheet" href="{% static 'menu/css/Style-Colors.css' %}">
 
   <!-- Origen de los temas de colores para los contenedores -->
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -40,13 +40,13 @@
   <div class="top">
     <div class="row padding brown">
       <div class="col s3">
-        <a href="Menu Principal.html" class="button block brown">HOME</a>
+        <a href="{% url'MenuPrincipal' %}" class="button block brown">HOME</a>
       </div>
       <div class="col s3">
-        <a href="Suv.html" class="button block brown">Suv</a>
+        <a href="{% url'Suv' %}" class="button block brown">Suv</a>
       </div>
       <div class="col s3">
-        <a href="Camionetas.html" class="button block brown">Camionetas</a>
+        <a href="{% url'Camionetas' %}" class="button block brown">Camionetas</a>
       </div>
       <div class="col s3">
         <a href="#contactanos" class="button block brown">CONTACTANOS</a>
@@ -81,9 +81,9 @@ Estos vehículos de alta gama ofrecen una experiencia de conducción incomparabl
   <div class="container center margin-top row-padding">
 
     <div class="third">
-      <a href="Mazda.html">
+      <a href="{% url 'Mazda' %}">
         <div class="card white">
-          <img src="img/mazda_CX-5_2022.jpg" alt="No Image" style="width: 100%;">
+          <img src="{% static 'menu/img/mazda_CX-5_2022.jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
             <h5>Mazda cx-5</h5>
           </div>
@@ -92,9 +92,9 @@ Estos vehículos de alta gama ofrecen una experiencia de conducción incomparabl
     </div>
 
     <div class="third">
-      <a href="subaru.html">
+      <a href="{% url 'subaru' %}">
         <div class="card white">
-          <img src="img/xvsubaruuu.jpg" alt="No Image" style="width: 100%;">
+          <img src="{% static 'menu/img/xvsubaruuu.jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
             <h5>Subaru xv</h5>
           </div>
@@ -103,9 +103,9 @@ Estos vehículos de alta gama ofrecen una experiencia de conducción incomparabl
     </div>
 
     <div class="third">
-      <a href="jeep.html">
+      <a href="{% url 'subaru' %}">
         <div class="card white">
-          <img src="img/2017-Jeep-Grand-Cherokee-SRT-SUV-blue-Stephen-Corby-1200x800-(28).jpg" alt="No Image" style="width: 100%;">
+          <img src="{% static 'menu/img/2017-Jeep-Grand-Cherokee-SRT-SUV-blue-Stephen-Corby-1200x800-(28).jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
             <h5>Jeep Grand Cherokee</h5>
           </div>

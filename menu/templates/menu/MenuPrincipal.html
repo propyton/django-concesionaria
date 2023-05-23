@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <!-- Origen de los meeidas generales y constructos basicos de la pagina -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="{% static 'menu/css/Style.css' %}">
 
     <!-- Origen de los colores generales de la pagina -->
-    <link rel="stylesheet" href="style/Style-Colors.css">
+    <link rel="stylesheet" href="{% static 'menu/css/Style-Colors.css' %}">
 
     <!-- Origen de los temas de colores para los contenedores -->
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -61,7 +61,7 @@
                 <a href="#secciones" class="button block brown">Secciones</a>
             </div>
             <div class="col s3">
-                <a href="Inicio De sesion.html" class="button block brown">Iniciar Sesion</a>
+                <a href="{% url'IncioDeSesion' %}" class="button block brown">Iniciar Sesion</a>
             </div>
         </div>
     </div>
@@ -107,9 +107,9 @@
                  y estamos comprometidos en ayudar a nuestros clientes a encontrar el automóvil perfecto para su estilo de vida y presupuesto.</p>
         </div>
         <div class="third">
-            <a href="Camionetas.html">
+            <a href="{% url'Camionetas' %}">
                 <div class="card white">
-                    <img src="img/Ford-F150-Raptor-R-3.jpg" alt="No found" style="width:100%" class="hover-opacity">
+                    <img src="{% static 'menu/img/Ford-F150-Raptor-R-3.jpg' %}" alt="No found" style="width:100%" class="hover-opacity">
                     <div class="container center">
                         <h4>Camionetas</h4>
                         <h4></h4>
@@ -120,9 +120,9 @@
         </div>
 
         <div class="third">
-            <a href="Suv.html">
+            <a href="{% url'Suv' %}">
                 <div class="card white">
-                    <img src="img/2017-Jeep-Grand-Cherokee-SRT-SUV-blue-Stephen-Corby-1200x800-(28).jpg" alt="No found" style="width:100%" class="hover-opacity">
+                    <img src="{% static 'menu/img/2017-Jeep-Grand-Cherokee-SRT-SUV-blue-Stephen-Corby-1200x800-(28).jpg' %}" alt="No found" style="width:100%" class="hover-opacity">
                     <div class="container center">
                         <h4>Suv</h4>
                         <h4></h4>

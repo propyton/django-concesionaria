@@ -40,10 +40,10 @@
   <div class="top">
     <div class="row padding brown">
       <div class="col s3">
-        <a href="Menu Principal.html" class="button block brown">HOME</a>
+        <a href="{% url'MenuPrincipal' %}" class="button block brown">HOME</a>
       </div>
       <div class="col s3">
-        <a href="Suv.html" class="button block brown">Suv</a>
+        <a href="{% url'Suv' %}" class="button block brown">Suv</a>
       </div>
       <div class="col s3">
         <a href="#camionetas" class="button block brown">Camionetas</a>
@@ -80,7 +80,7 @@
   <div class="container center margin-top row-padding">
 
     <div class="third">
-      <a href="Ford F150 Raptor.html">
+      <a href="{% url'FordF150Raptor' %}">
         <div class="card white">
           <img src="{% static 'menu/img/Ford-F150-Raptor-R-3.jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
@@ -91,9 +91,9 @@
     </div>
 
     <div class="third">
-      <a href="Ford F150 Platinum.html">
+      <a href="{% url'FordF150Platinum' %}">
         <div class="card white">
-          <img src="img/f150_platinum.jpg" alt="No Image" style="width: 100%;">
+          <img src="{% static 'menu/img/f150_platinum.jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
             <h5>Ford F150 Platinum</h5>
           </div>
@@ -102,9 +102,9 @@
     </div>
 
     <div class="third">
-      <a href="Silverado.html">
+      <a href="{% url'Silverado' %}">
         <div class="card white">
-          <img src="img/chevrolet_silverado.jpg" alt="No Image" style="width: 100%;">
+          <img src="{% static 'menu/img/chevrolet_silverado.jpg' %}" alt="No Image" style="width: 100%;">
           <div class="container">
             <h5>Chevrolet Silverado</h5>
           </div>
